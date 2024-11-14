@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Wash POS System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Car Wash POS System</h1>
+    
+    <div class="service-selection">
+      <h3>Select Services</h3>
+      <label><input type="checkbox" class="service" data-name="Basic Wash" data-price="10"> Basic Wash - $10</label>
+      <label><input type="checkbox" class="service" data-name="Premium Wash" data-price="20"> Premium Wash - $20</label>
+      <label><input type="checkbox" class="service" data-name="Deluxe Wash" data-price="30"> Deluxe Wash - $30</label>
+    </div>
+
+    <div class="customer-details">
+      <h3>Customer Details</h3>
+      <input type="text" id="name" placeholder="Customer Name">
+      <input type="text" id="phone" placeholder="Phone Number">
+    </div>
+
+    <div class="bill">
+      <h3>Bill Summary</h3>
+      <table id="bill-table">
+        <tr><th>Service</th><th>Price</th></tr>
+      </table>
+      <hr>
+      <div class="total">
+        <strong>Total: $<span id="total-price">0</span></strong>
+      </div>
+      <button onclick="printBill()">Print Bill</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

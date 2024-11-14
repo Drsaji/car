@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #8EC5FC, #E0C3FC);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #444;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    color: #6C63FF;
+    font-size: 18px;
+    margin: 20px 0 10px;
+    text-align: left;
+  }
+  
+  .service-selection label, .customer-details input {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .service-selection label {
+    color: #444;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .service-selection label:hover {
+    color: #6C63FF;
+  }
+  
+  .customer-details input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    font-size: 15px;
+    margin-top: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .customer-details input:focus {
+    border-color: #6C63FF;
+  }
+  
+  .bill {
+    margin-top: 30px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #6C63FF;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  button {
+    background: linear-gradient(135deg, #6C63FF, #8E44AD);
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #8E44AD, #6C63FF);
+  }
+  
+  .total {
+    text-align: right;
+    font-size: 20px;
+    margin-top: 15px;
+    color: #444;
+    font-weight: bold;
+  }
+  
